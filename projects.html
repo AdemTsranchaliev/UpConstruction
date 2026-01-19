@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Галерия - Вибро Бетон</title>
+  <meta name="description" content="Галерия с павета, бордюри, тротоарни плочки и паркинг елементи.">
+  <meta name="keywords" content="галерия, павета, бордюри, плочки, паркинг елементи">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .projects-page .projects.section {
+      background: #f7f8f9;
+    }
+
+    .projects-page .section-header span {
+      color: var(--accent-color);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .projects-page .projects-highlights .highlight-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .projects-page .projects-highlights .highlight-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .projects-page .projects-highlights .highlight-card .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: color-mix(in srgb, var(--accent-color), transparent 85%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-color);
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    .projects-page .portfolio-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .projects-page .portfolio-filters li {
+      border-radius: 999px;
+      padding: 8px 18px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: #ffffff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+    }
+
+    .projects-page .portfolio-filters li.filter-active,
+    .projects-page .portfolio-filters li:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+      color: #ffffff;
+    }
+
+    .projects-page .portfolio-content {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .projects-page .portfolio-content img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s ease;
+    }
+
+    .projects-page .portfolio-content:hover img {
+      transform: scale(1.05);
+    }
+
+    .projects-page .portfolio-info {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%);
+      padding: 20px;
+    }
+
+    .projects-page .portfolio-info h4,
+    .projects-page .portfolio-info p {
+      color: #ffffff;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="projects-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Вибро Бетон</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="services.html">Бетонови изделия</a></li>
+          <li><a href="projects.html" class="active">Галерия</a></li>
+          <li><a href="blog.html">Новини</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/vibro-beton/bgr1.jpg);">
+      <div class="container position-relative">
+        <h1>Галерия</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Начало</a></li>
+            <li class="current">Галерия</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+
+      <div class="container">
+
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span>Галерия</span>
+          <h2>Изделия в реална среда</h2>
+          <p>Подбор от нашите павета, бордюри, плочки и паркинг елементи с акцент върху качество и издръжливост.</p>
+        </div>
+
+        <div class="row g-4 projects-highlights mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-4">
+            <div class="highlight-card">
+              <div class="icon"><i class="bi bi-grid-3x3-gap"></i></div>
+              <h5>Богато разнообразие</h5>
+              <p>Форми, размери и цветове за всеки проект.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="highlight-card">
+              <div class="icon"><i class="bi bi-shield-check"></i></div>
+              <h5>Сертифицирано качество</h5>
+              <p>Производство по стандарти за надеждност и дълъг живот.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="highlight-card">
+              <div class="icon"><i class="bi bi-buildings"></i></div>
+              <h5>Здравина и устойчивост</h5>
+              <p>Подходящи за натоварени зони и интензивно използване.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Всички</li>
+            <li data-filter=".filter-pavers">Павета</li>
+            <li data-filter=".filter-curbs">Бордюри</li>
+            <li data-filter=".filter-tiles">Плочки</li>
+            <li data-filter=".filter-parking">Паркинг</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pavers">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/vibropresovan-pavaj-1-1.jpg" class="img-fluid" alt="Павета">
+                <div class="portfolio-info">
+                  <h4>Павета</h4>
+                  <p>Висококачествен паваж</p>
+                  <a href="assets/img/vibro-beton/vibropresovan-pavaj-1-1.jpg" title="Павета" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-curbs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/borduri-1.jpg" class="img-fluid" alt="Бордюри">
+                <div class="portfolio-info">
+                  <h4>Бордюри</h4>
+                  <p>Стабилни линейни елементи</p>
+                  <a href="assets/img/vibro-beton/borduri-1.jpg" title="Бордюри" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tiles">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/plochki-1.jpg" class="img-fluid" alt="Тротоарни плочки">
+                <div class="portfolio-info">
+                  <h4>Тротоарни плочки</h4>
+                  <p>Настилки за пешеходни зони</p>
+                  <a href="assets/img/vibro-beton/plochki-1.jpg" title="Тротоарни плочки" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-parking">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/parking-elementi-1-1.jpg" class="img-fluid" alt="Паркинг елементи">
+                <div class="portfolio-info">
+                  <h4>Паркинг елементи</h4>
+                  <p>Вибропресован бетон</p>
+                  <a href="assets/img/vibro-beton/parking-elementi-1-1.jpg" title="Паркинг елементи" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pavers">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/vibropresovan-pavaj-2-1.jpg" class="img-fluid" alt="Паваж">
+                <div class="portfolio-info">
+                  <h4>Паваж</h4>
+                  <p>Различни размери и цветове</p>
+                  <a href="assets/img/vibro-beton/vibropresovan-pavaj-2-1.jpg" title="Паваж" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-curbs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/borduri-2-1.jpg" class="img-fluid" alt="Бордюри">
+                <div class="portfolio-info">
+                  <h4>Бордюри</h4>
+                  <p>За алеи и тротоари</p>
+                  <a href="assets/img/vibro-beton/borduri-2-1.jpg" title="Бордюри" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tiles">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/parking-plochki.jpg" class="img-fluid" alt="Плочки">
+                <div class="portfolio-info">
+                  <h4>Плочки</h4>
+                  <p>Настилки за пешеходни зони</p>
+                  <a href="assets/img/vibro-beton/parking-plochki.jpg" title="Плочки" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-parking">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/BETONOV-ULEI-1.jpg" class="img-fluid" alt="Паркинг елементи">
+                <div class="portfolio-info">
+                  <h4>Паркинг елементи</h4>
+                  <p>Подходящи за паркинги</p>
+                  <a href="assets/img/vibro-beton/BETONOV-ULEI-1.jpg" title="Паркинг елементи" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pavers">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/vibropresovan-pavaj-3.jpg" class="img-fluid" alt="Павета">
+                <div class="portfolio-info">
+                  <h4>Паваж</h4>
+                  <p>Класически форми</p>
+                  <a href="assets/img/vibro-beton/vibropresovan-pavaj-3.jpg" title="Паваж" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-curbs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/borduri-1.jpg" class="img-fluid" alt="Бордюри">
+                <div class="portfolio-info">
+                  <h4>Бордюри</h4>
+                  <p>Надеждно оформяне на настилки</p>
+                  <a href="assets/img/vibro-beton/borduri-1.jpg" title="Бордюри" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tiles">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/plochki-1.jpg" class="img-fluid" alt="Тротоарни плочки">
+                <div class="portfolio-info">
+                  <h4>Плочки</h4>
+                  <p>За алеи и пешеходни зони</p>
+                  <a href="assets/img/vibro-beton/plochki-1.jpg" title="Плочки" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-parking">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/vibro-beton/parking-elementi-1-1.jpg" class="img-fluid" alt="Паркинг елементи">
+                <div class="portfolio-info">
+                  <h4>Паркинг елементи</h4>
+                  <p>Висока якост</p>
+                  <a href="assets/img/vibro-beton/parking-elementi-1-1.jpg" title="Паркинг елементи" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Projects Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Вибро Бетон</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>с. Исперихово – Стопански двор</p>
+            <p class="mt-3"><strong>Телефон:</strong> <span>0879 11 11 96</span></p>
+            <p><strong>Телефон:</strong> <span>0879 11 11 95</span></p>
+            <p><strong>Имейл:</strong> <span>sum.peshtera@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Бързи връзки</h4>
+          <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="services.html">Бетонови изделия</a></li>
+            <li><a href="projects.html">Галерия</a></li>
+            <li><a href="blog.html">Новини</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Продукти</h4>
+          <ul>
+            <li><a href="services.html">Паркинг елементи</a></li>
+            <li><a href="services.html">Павета</a></li>
+            <li><a href="services.html">Бордюри</a></li>
+            <li><a href="services.html">Тротоарни плочки</a></li>
+            <li><a href="projects.html">Галерия</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Стандарти</h4>
+          <ul>
+            <li><a href="about.html">БДС EN 1338:2005</a></li>
+            <li><a href="about.html">БДС EN 1339:2005</a></li>
+            <li><a href="about.html">БДС EN 1340:2005</a></li>
+            <li><a href="about.html">ISO 9001:2015</a></li>
+            <li><a href="about.html">Система 4</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Информация</h4>
+          <ul>
+            <li><a href="about.html">За нас</a></li>
+            <li><a href="blog.html">Новини</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="services.html">Продукти</a></li>
+            <li><a href="projects.html">Галерия</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Вибро Бетон</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
